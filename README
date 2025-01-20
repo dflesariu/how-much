@@ -1,0 +1,12 @@
+idea
+- sleek but minimalistic Django web app used to track spending and generate stats
+
+- supermarket receits are scanned / photographed and data is extracted using computer vision algorithms and OCR libraries
+  - the first version will not have this feature so it will rely on manual data input 
+  - all data pulled from the images will be validated and sanitised
+  - data read: store name and location, time, date of purchase, items, quantity, price, total price 
+    - (individual prices and the total price are used to validate the OCR's accuracy)
+  - items are stored in a MySQL DB
+- tracks week to week spending and how often certain items show up
+  - creates a shopping list taking into account the frequency of item purchase
+- communicates using a telegram bot using a simple API - for the picture input and list output, generating stats
